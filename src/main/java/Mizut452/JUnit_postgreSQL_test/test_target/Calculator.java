@@ -5,7 +5,8 @@ public class Calculator {
         return x * y;
     }
 
-    public int divide(int x, int y) {
+    public float divide(float x, float y) {
+        if(y == 0) throw new IllegalArgumentException("０で割られました");
         return x / y;
     }
 }

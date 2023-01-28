@@ -13,4 +13,16 @@ public class CalculatorTest {
         int actual = calculator.multiply(2, 5);
         Assertions.assertEquals(expected, actual);
     }
+
+    @Test
+    public void divideTest() {
+        Calculator calculator = new Calculator();
+        float expected = 5.1f;
+        float actual = calculator.divide(51, 10);
+        Assertions.assertEquals(expected, actual);
+
+        expected = 1.5f;
+        actual = calculator.divide(3, 2);
+        Assertions.assertEquals(expected, actual);
+    }
 }
